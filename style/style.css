@@ -1,0 +1,26 @@
+img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#items-div{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:30px;
+}
+
+.show-item{
+    border-radius: 10px;
+    background:gainsboro;
+}
+#show-food{
+    display: grid;
+    justify-content: center;
+}
+#show-food img{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+   margin-bottom: 10px;
+}

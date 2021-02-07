@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Monster</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container">
+    <header class="d-flex justify-content-between align-items-center">
+        <div>
+            <p class="font-weight-bold">Hungry Monster</p>
+        </div>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Recipes</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+
+    </header>
+    <div>
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="item-category" type="text" class="form-control" placeholder="Search for meal ...">
+                <div class="input-group-append">
+                    <button onclick="searchResult() " type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="show-food">
+
+    </div>
+    <div id="items-div">
+    </div>
+    </div>
+    <script src="script/app.js"></script>
+</body>
+</html>
