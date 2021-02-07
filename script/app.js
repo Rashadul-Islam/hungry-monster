@@ -4,7 +4,7 @@ function searchResult() {
   const getSearchInput = document.getElementById('item-category').value;
 
   //condition for checking search with null values
-  if (getSearchInput != '')
+  if (getSearchInput != ''){
     fetch(
       `https://www.themealdb.com/api/json/v1/1/search.php?s=${getSearchInput}`
     )
@@ -16,7 +16,10 @@ function searchResult() {
       .catch(error=>{
         document.getElementById('item-category').value = '';
         alert('No Such Item Found...!!!');
-    })
+    })}
+    else{
+        alert("Noting Inputed...!!!");
+    }
 }
 
 //function for showing items in front page
