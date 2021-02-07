@@ -74,9 +74,9 @@ const renderDetails = (details) => {
         for (let i = 9; i <=28; i++){
 
 //condition for avoiding null values of ingredient
-            if(arr[i]!=""){
+            if(arr[i]!=''){
             const ingredient=document.createElement('p');
-            ingredient.innerText='* '+arr[i];
+            ingredient.innerText=arr[i];
             itemsDiv.appendChild(ingredient);
             }        
         }
